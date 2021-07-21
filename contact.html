@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>iwg website</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  
+</head>
+<body>
+
+<div class="topbar">
+
+<a href="home.html">
+  <div class="navbar">
+  <h3>Home</h3>
+</div>
+</a>
+<a href="interest.html">
+<div class="navbar">
+  <h3>Interests and hobbies</h3>
+</div>
+</a>
+<a href="achievements.html">
+<div class="navbar">
+  <h3>Achievements</h3>
+</div>
+</a>
+<a href="contact.html">
+<div class="navbar">
+  <h3>Contact Page</h3>
+</div>
+</a>
+
+</div>
+
+
+  <center>
+    <div class="contentbox2">
+      <a href="iwg.iitkgp@gmail.com"><h3>iwg.iitkgp@gmail.com</h3></a>
+      <h3><i class="fab fa-whatsapp"></i>  986322XXXX</h3>
+      </div>
+    </center>
+  
+<footer>
+  <div class="icon"><i class="fab fa-facebook"></i></div>
+  <div class="icon"><i class="fab fa-instagram"></i></div>
+  <div class="icon"><i class="fab fa-twitter"></i></div>
+  <div class="icon"><i class="fab fa-whatsapp"></i></div>
+
+  
+</footer>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+  
+</script>
+
+</body>
+</html>
